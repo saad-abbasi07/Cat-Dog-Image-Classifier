@@ -6,7 +6,7 @@ from PIL import Image
 app = Flask(__name__)
 
 # load model (make sure path is correct)
-model = tf.keras.models.load_model("model.keras")
+model = tf.keras.models.load_model("cat_dog_model.keras")
 
 @app.route("/")
 def home():
